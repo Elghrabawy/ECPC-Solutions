@@ -9,7 +9,7 @@ void IO(){
 #define sz(x) (int)(x.size())
 #define all(x) x.begin(), x.end()
 
-namespace __art_bridges{
+namespace __bridges{
     vector<pair<int, int>> bridges;
     vector<vector<int>> adj;
     vector<int> low, dfn;
@@ -40,7 +40,7 @@ namespace __art_bridges{
             if (dfn[i] == -1) art_bridges(i, -1), comps++;
         sort(all(bridges));
     }
-} using namespace __art_bridges;
+} using namespace __bridges;
 
 signed main(){
     IO();
